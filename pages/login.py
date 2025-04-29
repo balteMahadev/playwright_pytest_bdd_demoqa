@@ -2,6 +2,7 @@
 from playwright.sync_api import Page
 from config import BASE_URL  # Import base URL from config.py
 
+
 class LoginPage:
     def __init__(self, page: Page):
         self.page = page

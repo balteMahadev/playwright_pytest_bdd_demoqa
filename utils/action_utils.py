@@ -7,6 +7,7 @@ import os
 # Logger setup
 logger = setup_logger()
 
+
 # Function to load the page URL (Sync)
 def load_page_url(page: Page, url: str):
     try:
@@ -17,11 +18,13 @@ def load_page_url(page: Page, url: str):
         logger.error(f"[FAIL] Failed to load page with URL: {url} | Error: {e} | Screenshot: {path}")
         raise
 
+
 # Function to get video path if exists (Sync)
 def get_video_path(page: Page):
     # Video is stored in the context's record_video_dir
     video_path = page.context.videos[0] if page.context.videos else None
     return video_path
+
 
 # Generic click action (Sync)
 def click_element(page: Page, locator: Locator, description: str = ""):
@@ -31,8 +34,10 @@ def click_element(page: Page, locator: Locator, description: str = ""):
     except Exception as e:
         path = capture_screenshot(page, "click_failed")
         video_path = get_video_path(page)
-        logger.error(f"[FAIL] Click failed on {description or locator} | Error: {e} | Screenshot: {path} | Video: {video_path}")
+        logger.error(
+            f"[FAIL] Click failed on {description or locator} | Error: {e} | Screenshot: {path} | Video: {video_path}")
         raise
+
 
 # Fill input field (Sync)
 def fill_text(page: Page, locator: Locator, text: str, description: str = ""):
@@ -42,7 +47,8 @@ def fill_text(page: Page, locator: Locator, text: str, description: str = ""):
     except Exception as e:
         path = capture_screenshot(page, "fill_failed")
         video_path = get_video_path(page)
-        logger.error(f"[FAIL] Fill failed on {description or locator} | Error: {e} | Screenshot: {path} | Video: {video_path}")
+        logger.error(
+            f"[FAIL] Fill failed on {description or locator} | Error: {e} | Screenshot: {path} | Video: {video_path}")
         raise
 
 
@@ -54,8 +60,10 @@ def select_dropdown(page: Page, locator: Locator, text: str, description: str = 
     except Exception as e:
         path = capture_screenshot(page, "dropdown_failed")
         video_path = get_video_path(page)
-        logger.error(f"[FAIL] Select failed on {description or locator} | Error: {e} | Screenshot: {path} | Video: {video_path}")
+        logger.error(
+            f"[FAIL] Select failed on {description or locator} | Error: {e} | Screenshot: {path} | Video: {video_path}")
         raise
+
 
 # Check/Uncheck checkbox (Sync)
 def handle_checkbox(page: Page, locator: Locator, action: str = "check", description: str = ""):
@@ -71,8 +79,10 @@ def handle_checkbox(page: Page, locator: Locator, action: str = "check", descrip
     except Exception as e:
         path = capture_screenshot(page, "checkbox_failed")
         video_path = get_video_path(page)
-        logger.error(f"[FAIL] Checkbox action '{action}' failed | Error: {e} | Screenshot: {path} | Video: {video_path}")
+        logger.error(
+            f"[FAIL] Checkbox action '{action}' failed | Error: {e} | Screenshot: {path} | Video: {video_path}")
         raise
+
 
 # Handle alerts/modals (Sync)
 def handle_alert(page: Page, accept=True, prompt_text=None):
@@ -85,6 +95,7 @@ def handle_alert(page: Page, accept=True, prompt_text=None):
                 dialog.accept()
             else:
                 dialog.dismiss()
+
         page.once("dialog", dialog_handler)
         logger.info("[ALERT HANDLER] Attached")
     except Exception as e:

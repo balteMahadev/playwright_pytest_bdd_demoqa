@@ -5,11 +5,13 @@ from utils.logging_utils import setup_logger
 # Setup Logger
 logger = setup_logger("framework")
 
+
 # Fixture for Playwright instance (Sync)
 @pytest.fixture(scope="session")
 def playwright_instance():
     with sync_playwright() as playwright:
         yield playwright
+
 
 # Fixture for browser (Sync)
 @pytest.fixture(scope="session")
@@ -26,6 +28,7 @@ def browser(playwright_instance):
     browser = playwright_instance.chromium.launch(headless=headless, slow_mo=slowmo)
     yield browser
     browser.close()  # Ensure to close the browser after the test session
+
 
 # Fixture for page (Sync)
 @pytest.fixture(scope="function")

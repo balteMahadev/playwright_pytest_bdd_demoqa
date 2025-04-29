@@ -1,5 +1,6 @@
 import logging
 
+
 def setup_logger(name="framework"):
     logger = logging.getLogger(name)
     logger.setLevel(logging.INFO)
@@ -10,4 +11,3 @@ def setup_logger(name="framework"):
     logger.addHandler(console_handler)
 
     return logger
-

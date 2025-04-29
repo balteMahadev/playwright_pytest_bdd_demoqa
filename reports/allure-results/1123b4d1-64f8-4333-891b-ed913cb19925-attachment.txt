@@ -1,6 +1,0 @@
-[32mINFO    [0m framework:action_utils.py:14 [LOAD] Page loaded with URL: https://www.saucedemo.com/
-[32mINFO    [0m framework:common_steps.py:21 [PASS] login page is displayed correctly with all required elements.
-[32mINFO    [0m framework:action_utils.py:41 [FILL] username_input in login page with 'standard_user'
-[32mINFO    [0m framework:action_utils.py:41 [FILL] password_input in login page with 'secret_sauce'
-[32mINFO    [0m framework:action_utils.py:30 [CLICK] login_button in login page
-[32mINFO    [0m framework:common_steps.py:21 [PASS] products page is displayed correctly with all required elements.

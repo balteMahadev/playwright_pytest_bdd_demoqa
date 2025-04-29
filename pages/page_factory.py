@@ -36,4 +36,3 @@ class PageFactory:
             raise AttributeError(f"[ERROR] Element '{element_name}' not found in {page_name} page.")
 
         return getattr(page_obj, element_name)
-
