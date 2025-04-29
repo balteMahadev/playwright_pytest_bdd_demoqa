@@ -1,8 +1,6 @@
-import logging
 from playwright.sync_api import Locator, Page
 from helpers import capture_screenshot  # Assuming capture_screenshot is a helper function in your project
 from .logging_utils import setup_logger
-import os
 
 # Logger setup
 logger = setup_logger()

@@ -1,13 +1,9 @@
 from pages.login import LoginPage
 from pages.products import ProductsPage
 
-# from pages.dashboard_page import DashboardPage as dashboard
-# from pages.profile_page import ProfilePage as profile
-
 PAGE_OBJECTS = {
     "login": LoginPage,
     "products": ProductsPage,
-    # "profile": profile,
 }
 
 
