@@ -1,0 +1,24 @@
+[INFO] 2025-04-29 10:30:02,112 - [LOAD] Page loaded with URL: https://www.saucedemo.com/
+[INFO] 2025-04-29 10:30:02,112 - [LOAD] Page loaded with URL: https://www.saucedemo.com/
+[INFO] 2025-04-29 10:30:02,112 - [LOAD] Page loaded with URL: https://www.saucedemo.com/
+[INFO] 2025-04-29 10:30:02,147 - [PASS] login page is displayed correctly with all required elements.
+[INFO] 2025-04-29 10:30:02,147 - [PASS] login page is displayed correctly with all required elements.
+[INFO] 2025-04-29 10:30:02,147 - [PASS] login page is displayed correctly with all required elements.
+[INFO] 2025-04-29 10:30:02,147 - [PASS] login page is displayed correctly with all required elements.
+[INFO] 2025-04-29 10:30:02,271 - [FILL] username_input in login page with 'standard_user'
+[INFO] 2025-04-29 10:30:02,271 - [FILL] username_input in login page with 'standard_user'
+[INFO] 2025-04-29 10:30:02,271 - [FILL] username_input in login page with 'standard_user'
+[INFO] 2025-04-29 10:30:02,271 - [FILL] username_input in login page with 'standard_user'
+[INFO] 2025-04-29 10:30:02,395 - [FILL] password_input in login page with 'secret_sauce'
+[INFO] 2025-04-29 10:30:02,395 - [FILL] password_input in login page with 'secret_sauce'
+[INFO] 2025-04-29 10:30:02,395 - [FILL] password_input in login page with 'secret_sauce'
+[INFO] 2025-04-29 10:30:02,395 - [FILL] password_input in login page with 'secret_sauce'
+[INFO] 2025-04-29 10:30:02,551 - [CLICK] login_button in login page
+[INFO] 2025-04-29 10:30:02,551 - [CLICK] login_button in login page
+[INFO] 2025-04-29 10:30:02,551 - [CLICK] login_button in login page
+[INFO] 2025-04-29 10:30:02,551 - [CLICK] login_button in login page
+[INFO] 2025-04-29 10:30:02,564 - [PASS] products page is displayed correctly with all required elements.
+[INFO] 2025-04-29 10:30:02,564 - [PASS] products page is displayed correctly with all required elements.
+[INFO] 2025-04-29 10:30:02,564 - [PASS] products page is displayed correctly with all required elements.
+[INFO] 2025-04-29 10:30:02,564 - [PASS] products page is displayed correctly with all required elements.
+[INFO] 2025-04-29 10:30:02,564 - [PASS] products page is displayed correctly with all required elements.
